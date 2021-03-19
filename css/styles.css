@@ -8,12 +8,16 @@
 
 body {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 ul {
   list-style-type: none;
 }
 /*===========HEADER===========*/
+.navigation-list-link {
+  list-style-type: none;
+}
 
 .header-address,
 .footer-address {
@@ -192,8 +196,13 @@ ul {
   text-decoration: none;
 }
 
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--accent-text-color);
+}
+
 .geo-link {
-  color: var(--white);
+  color: #ffffff;
 }
 /*===========END FOOTER===========*/
 
