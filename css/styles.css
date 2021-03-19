@@ -1,3 +1,11 @@
+:root {
+  --main-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --grey: #757575;
+  --white: #ffffff;
+  --background: #2f303a;
+}
+
 body {
   box-sizing: border-box;
 }
@@ -5,6 +13,7 @@ body {
 ul {
   list-style-type: none;
 }
+/*===========HEADER===========*/
 
 .header-address,
 .footer-address {
@@ -17,12 +26,12 @@ ul {
   font-size: 26px;
   line-height: 1.193;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-text-color);
   text-decoration: none;
 }
 
 .logo-s {
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .navigation-list-link {
@@ -31,12 +40,12 @@ ul {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
-  color: #2196f3;
+  color: var(--accent-text-color);
 }
 
 .header-address-link {
@@ -45,12 +54,20 @@ ul {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--grey);
 }
 
 .header-address-link:hover,
 .header-address-link:focus {
-  color: #2196f3;
+  color: var(--accent-text-color);
+}
+
+/*===========END HEADER===========*/
+
+/*===========HERO===========*/
+
+.hero {
+  background: var(--background);
 }
 
 .hero-title {
@@ -61,8 +78,7 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  /* color: #ffffff; */
+  color: var(--white);
 }
 
 .modal-btn {
@@ -70,8 +86,19 @@ ul {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
-  color: #ffffff;
+  color: var(--white);
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/*===========END HERO===========*/
+
+/*===========ABOUT===========*/
 
 .description-title {
   font-family: Roboto, sans-serif;
@@ -80,33 +107,33 @@ ul {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .description-item {
   font-family: Roboto, sans-serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1, 715;
+  line-height: 1.715;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey);
 }
 
 .about-title {
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 166;
+  line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .team-title {
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 166;
+  line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -116,24 +143,28 @@ ul {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 187;
+  line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .team-position {
   font-family: Roboto, sans-serif;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1, 187;
+  line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey);
 }
 
+/*===========END ABOUT===========*/
+
+/*===========FOOTER===========*/
+
 .footer {
-  background: #2f303a;
+  background: var(--background);
 }
 
 .footer-logo {
@@ -143,12 +174,12 @@ ul {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-text-color);
   text-decoration: none;
 }
 
 .logo-ss {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .contact-list-link {
@@ -162,5 +193,48 @@ ul {
 }
 
 .geo-link {
-  color: #ffffff;
+  color: var(--white);
+}
+/*===========END FOOTER===========*/
+
+/*===========PORTFOLIO===========*/
+
+.btn {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--white);
+}
+
+.offer-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+
+.offer-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--grey);
 }
