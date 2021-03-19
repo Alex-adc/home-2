@@ -1,3 +1,11 @@
+body {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .header-address,
 .footer-address {
   font-style: normal;
@@ -7,7 +15,7 @@
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1, 193;
+  line-height: 1.193;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
@@ -21,7 +29,7 @@
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 143;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -35,7 +43,7 @@
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 143;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -49,7 +57,7 @@
   font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 364;
+  line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -61,7 +69,7 @@
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1, 875;
+  line-height: 1.875;
   color: #ffffff;
 }
 
@@ -69,7 +77,7 @@
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 143;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
@@ -124,39 +132,35 @@
   color: #757575;
 }
 
+.footer {
+  background: #2f303a;
+}
+
 .footer-logo {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1, 192;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
 }
 
-/* .logo-ss {
+.logo-ss {
   color: #ffffff;
-} */
-
-.geo-link {
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1, 714;
-  letter-spacing: 0.03em;
-  /* color: #ffffff; */
 }
 
 .contact-list-link {
-  font-family: Roboto;
-  font-style: normal;
+  font-family: Roboto, sans-serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
+  line-height: 1.713;
   letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.geo-link {
+  color: #ffffff;
 }
