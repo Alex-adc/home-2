@@ -15,8 +15,9 @@ ul {
   list-style-type: none;
 }
 /*===========HEADER===========*/
+.header-address-link,
 .navigation-list-link {
-  list-style-type: none;
+  text-decoration: none;
 }
 
 .header-address,
